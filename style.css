@@ -1,0 +1,234 @@
+header{   /*Editamos la posición y color que tendra el fondo del header*/
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: whitesmoke;
+}
+a{  /*Le quitamos el subrayado a los elementos del header y le colocamos un color negro al texto*/
+    text-decoration: none;
+    color: black;
+}
+nav a{  /*Cambiamos el tipo de fuente del texto de los enlaces de navegación, elejimos el tamaño de la fuente y el espacio que habra entre los elementos*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    padding-right: 100px;
+    font-size:x-large;
+}
+.logo{ /*Colocamos un margen a la izquierda del logo de la página*/
+    margin-left: 10px;
+}
+
+.slide {
+    position: relative;
+}
+.slide-inner {  /*Se establece la altura y el ancho de la presentación*/
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc( 600px + 3em);
+}
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+.slide-item { /* se establece la transición de la opacidad de las diapositivas*/
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+.slide-item img {
+    display: block;
+    height: 200px
+    max-width: 100%;
+}
+.slide-control { 
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+.slide-control.prev {
+    left: 2%;
+}
+.slide-control.next {
+    right: 2%;
+}
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo {
+    color: #428bca;
+}
+#titulo {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+         -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+section{ /*Editamos el color del fondo y el margen superior que tendra la sección */
+    background: #F1F1F1;
+    margin-top: -40px;
+}
+
+section h3{ /*Editamos el color, la fuente, el espacio superior e inferior y el margen del encabezado h3 de la seccion */
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #2b2626;
+}
+
+
+section nav a{   /*Editamos el margen y espacio que tendrán los enlaces de navegación*/
+    float: left;
+    padding-left: 16px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+footer { /*Editamos tanto el color del fondo como el margen superior que tendra el footer de la página*/
+    background-color:#422c6d;
+    margin-top: -20px;
+  }
+
+footer h2{ /*Editamos la posición, la fuente, espacio y color que tendra el elemento h2 dentro del footer*/
+    display: flex;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #F1F1F1;
+    padding-top: 20px;
+}
+
+.img { /*Editamos la posición y margen de la clase creada*/
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+
+.direccion{  /* Editamos el margen superior e izquierdo de la clase "dirección", además del color y la fuente */
+    margin-top: 50px;
+    margin-left: 60px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.direccion h3{ /*Editamos la posición, la fuente y el color del elemento h3 dentro de la clase "dirección"*/
+    display: flex;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.contenedor{ /*Ajustamos la posición para que los datos queden uno al lado del otro*/
+    display: flex;
+}
+
+.horario{ /*Editamos el margen superior e izquierdo, también cambiamos el color, el tamaño y el tipo de fuente */
+    margin-top: 20px;
+    margin-left: 100px;
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.horario h2{ /*Editamos la posición, color, tipo de fuente y espacio del elemento h2 dentro de la clase "horario"*/
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;
+}
+
+.contacto{ /*Editamos el margen superior e izquierdo, además de cambiar el color y el tipo de fuente*/
+    margin-top: 8px;
+    margin-left: 150px;
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.contacto h3{ /*Editamos la posición, el tipo de fuente y el color del elemento h3 dentro de la clase "contacto"*/
+    display: flex;
+    justify-self:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-size:large
+}
+
+.copy p{ /*Editamos la útima parte del footer ajustando su posición, cambiando el color, el tipo de fuente y editando el espacio superior e inferior del parrafo*/
+    display: flex;
+    justify-content: center;
+    color: #F1F1F1;
+    font-size:small;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{ /*Le quitamos el margen a la página*/
+    margin: 0%;
+}
+
+.panorama nav a{
+    margin-right: -10px;
+}
+

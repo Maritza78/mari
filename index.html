@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/f27bcfeb8c.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Viña Oulet Park</title>
+</head>
+<body>
+    <!-- Creación del header junto con los enlaces que iran en la cabecera -->
+    <header>
+        <div class="logo"> <!--Creación de una clase en donde ira el logo de la página-->
+            <img src="img/elemento.png">
+        </div>
+        <nav> <!--Creación de los enlaces de navegación usando la etiqueta nav  -->
+            <a href="" class="nav-link"><img src="img/Screenshot_1.png" align="center">Tiendas</a> <!--Agregamos las imagenes con la etiqueta <img> y el atributo src-->
+            <a href="" class="nav-link"><img src="img/Screenshot_2.png" align="center">Panoramas</a>
+            <a href="" class="nav-link"><img src="img/Screenshot_3.png" align="center">Ubicación</a>
+        </nav>
+    </header>
+    <!--Creación del carrusel de imagenes -->
+    <div class="slide">
+        <div class="slide-inner">  <!--se usan las etiquetas input y label en la creación de controles para navegar entre las diferentes imagenes del carrusel-->
+            <input class="slide-open" type="radio" id="slide-1" 
+                  name="slide" aria-hidden="true" hidden="" checked="checked">
+            <div class="slide-item">
+                <img src="img/Screenshot_4.png" width="1350px"> <!--Se agregan las imagenes del carrusel con la etiqueta <img>  -->
+            </div>
+            <input class="slide-open" type="radio" id="slide-2" 
+                  name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="img/Screenshot_4.png" width="1350px">
+            </div>
+            <input class="slide-open" type="radio" id="slide-3" 
+                  name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="img/Screenshot_4.png" width="1350px">
+            </div>   
+            <label for="slide-3" class="slide-control prev control-1">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-1" class="slide-control next control-3">›</label>
+            <ol class="slide-indicador"> <!--Se incluye una lista para indicar cuantas y que imagenes se muestran en pantalla -->
+                <li>
+                    <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <section> <!--Creación de una sección de imagenes con enlaces de navegación de los servicios de la tienda-->
+        <h3>TIENDAS</h3> <!--Se agrega un en cabezado para luego agregar las imagenes que tendran los enlaces -->
+        <nav>
+            <a href="" class="nav-link"><img src="img/mujer.png" height="300px" width="310px"></a>
+            <a href="" class="nav-link"><img src="img/hombre.png" height="300px" width="310px"></a>
+            <a href="" class="nav-link"><img src="img/niña.png" height="300px" width="310px"></a>
+            <a href="" class="nav-link"><img src="img/decohogar.png" height="300px" width="310px"></a>
+        </nav>
+        <div class="panorama">
+            <h3>PANORAMAS</h3>
+            <nav>
+            <a href="" class="nav-link"><img src="img/Screenshot_5.png" height="300px" width="318px"></a>
+            <a href="" class="nav-link"><img src="img/Screenshot_6.png" height="300px" width="318px"></a>
+            <a href="" class="nav-link"><img src="img/Screenshot_7.png" height="300px" width="318px"></a>
+            <a href="" class="nav-link"><img src="img/Screenshot_8.png" height="300px" width="318px"></a>
+            <a href="" class="nav-link"><img src="img/Screenshot_9.png" height="300px" width="318px"></a>
+            <a href="" class="nav-link"><img src="img/Screenshot_10.png" height="300px" width="318px"></a>
+            <a href="" class="nav-link"><img src="img/Screenshot_11.png" height="300px" width="318px"></a>
+            </nav>
+       </div>
+     
+       
+       <img src="img/Screenshot_12.png">
+     
+      
+
+<!--Creación del footer de la página web -->
+    <footer> 
+        <h2>LOCOMOCIÓN</h2> <!--creación de un encabezado-->
+        <div class="img">  <!--Se agregan unas imagenes al footer-->
+            <img src="img/imagen1.png" width="330px" height="90px" align="center"> 
+            <img src="img/imagen2.png" width="330px" height="90px" align="center">
+            <img src="img/imagen 3.png" width="330px" height="90px" align="center">
+            <img src="img/imagen4.png" width="330px" height="90px" align="center">
+        </div>
+
+        <div class="contenedor"> <!--Se crea una clase para personalizar las columnas de datos que iran en el footer -->
+        <!--Creamos la columna dirección, horario y contacto -->    
+                <div class="direccion"> 
+                    <h3>DIRECCIÓN</h3>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Camino Internacional 2440, Reñaca Alto, Viña del Mar </p> 
+                    <img src="img/Screenshot_13.png" width="400" height="100">
+                </div>
+
+                <div class="horario"> <!--Creamos una lista dentro de horario-->
+                    <h2>HORARIO</h2>
+                    <ul>
+                        <li><strong>LUNES A DOMINGO</strong></li>
+                        <p>de 10:00 a 20:00 hrs</p><br><br>
+         
+                        <li><strong> Estacionamiento </strong></li>
+                    <P><u>GRATIS</u> los primeros 30 minutos</P>
+                    <P>Cada 1/2 hora = $500 pesos</P>
+                    <P>Tarifa máxima $3.500 pesos</P>
+                    </ul>
+                </div>
+
+                <div class="contacto">
+                    <h3> CONTACTO </h3>
+                    <p><i class="fa-regular fa-envelope"></i> novedades@outletpark.cl </p>
+                    <p><i class="fa-solid fa-phone"></i> 32 251 4100 </p>
+                    <p><i class="fa-solid fa-fax"></i> Enviar mensaje </p> <br>
+                    <i class="fa-brands fa-square-facebook fa-2xl"></i>
+                    <i class="fa-brands fa-square-instagram fa-2xl"></i>
+                </div>
+
+                </div>
+
+                <div class="copy">
+                    <p><strong>© 2020 Viña Outlet Park – Todos los derechos reservados. Diseñado por WORKLab</strong></p>
+                </div>
+            </div>
+    
+    </footer> <!--Se cierra la etiqueta de footer-->
+
+</body>
+</html>
